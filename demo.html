@@ -11,18 +11,17 @@
   <body>
     <nav class="navbar fixed-top navbar-dark bg-dark justify-content-between flex-nowrap flex-row">
       <div class="container">
-        <a class="navbar-brand pull-left" href="#">
-          <img src="logo.png" width="45" height="35" class="d-inline-block align-top" alt="">
-          SnapCast
+        <a class="navbar-brand float-left" href="#">
+          2 Factor Authentication Demo
         </a>
         <ul class="navbar-nav mr-auto" style="display: inline;">
-          <li class="nav-item active" style="padding-bottom: 3px; padding-right: 3px; display: inline-block;">
-            <a class="nav-link text-primary" href="#">Home</a>
+          <li class="nav-item active" style="padding-right: 3px; display: inline-block;">
+            <a class="nav-link text-danger" href="#">Home</a>
           </li>
-          <li class="nav-item" style="padding-bottom: 3px; padding-right: 3px; display: inline-block;">
+          <li class="nav-item" style="padding-right: 3px; display: inline-block;">
             <a class="nav-link" href="#">How it works</a>
           </li>
-          <li class="nav-item" style="padding-bottom: 3px; padding-right: 3px; display: inline-block;">
+          <li class="nav-item" style="padding-right: 3px; display: inline-block;">
             <a class="nav-link" href="#">API</a>
           </li>
         </ul>
@@ -37,13 +36,13 @@
       <br>
       <div class="row un-neccessary">
         <div class="col-md-6">
-          <div class="card text-white bg-dark mb-3">
+          <div class="card text-white bg-danger mb-3">
             <div class="card-header">
-              <h3> What is this? </h3>
+              <h3> What is 2FA? </h3>
             </div>
             <div class="card-body">
               <p class="card-text">
-                SnapCast is a hosted service to simplify the deployment of TV alerting systems. Using your private code you can instantly update all of the connected slaves with any number of <font class="text-primary">cues</font>
+                2fa is a Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
               </p>
             </div>
           </div>
@@ -62,44 +61,12 @@
         <div class="col-md-6">
           <div class="card text-white bg-dark mb-3">
             <div class="card-header">
-              <h3> What is a cue? </h3>
+              <h3> What is this site? </h3>
             </div>
             <div class="card-body">
               <p class="card-text">
-                A cue is any type of content that can be displayed on a slave. Examples include:
+                A live demo of .........
               </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item bg-dark text-primary">Plain text</li>
-              <li class="list-group-item bg-dark text-primary">Images</li>
-              <li class="list-group-item bg-dark text-primary">Videos</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row options-thing">
-        <div class="col-sm-2" id="padding-1"> </div>
-        <div class="col-sm-4 master-mode">
-          <div class="card text-white bg-dark">
-            <img class="card-img-top" src="upload.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Master Mode</h4>
-              <p class="card-text">
-                You will recieve a secret code and a public code. The secret code will allow you to control slaves connected via the public code.
-              </p>
-              <a href="javascript:master()" class="btn btn-outline-primary">Begin a session</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 slave-mode" style="display: inline">
-          <div class="card text-white bg-dark">
-            <img class="card-img-top" src="download.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Slave Mode</h4>
-              <p class="card-text">
-                Use a public code to slave a display to a specific master. This display will then take cues from the master.
-              </p>
-              <a href="javascript:slave()" class="btn btn-outline-primary">Slave this display</a>
             </div>
           </div>
         </div>
@@ -127,26 +94,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/js-cookie/js-cookie/master/src/js.cookie.js"></script>
     <script>
-    function slave() {
-      $(".un-neccessary").fadeOut()
-      $(".options-thing").fadeOut(function () {
-        $(".slave-setup").fadeIn()
-      })
-    }
-    function validateSlave() {
-      var input = $("#slave-pin").val()
-      if (Array.from(input).length != 6) {
-        return false;
-      }
 
-      $("#slave-pin").removeClass("is-invalid");
-      $("#slave-pin").addClass("is-valid");
-      setTimeout(function () {
-        Cookies.set("pin", input)
-        window.location.href = "/slave/";
-      }, 1000)
-
-    }
     </script>
   </body>
 </html>
