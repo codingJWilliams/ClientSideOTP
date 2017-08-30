@@ -1,0 +1,40 @@
+div.main_holder{
+  padding-top:1px;
+  background-image:url(../../assets/img/bg.jpg);
+}
+
+.logo{
+  max-height:42px;
+  margin-bottom:-5px;
+  margin-top:3px;
+  margin-right:10px;
+}
+
+.nav-text{
+  display:inline;
+}
+
+div.container.main_jumbo{
+  margin-top:75px;
+  max-width:767px;
+}
+
+@media (max-width:767px) {
+  div.container.main_jumbo{
+    margin-top:105px;
+  }
+}
+
+img.demo-qr{
+  height:200px;
+  width:200px;
+}
+
+span.label.label-primary.current-code{
+  margin:0 auto;
+}
+
+p#explanation-1.text-center{
+  font-size:small;
+}
+
